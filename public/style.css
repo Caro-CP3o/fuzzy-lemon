@@ -186,18 +186,46 @@ header ul li a:hover {
 }
 
 #contact {
+  background: linear-gradient(to right, #fff 0%, #fff 45%, #FFF2BB 45%, #FFF2BB 100%);
+}
+#contact div.wrapper {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(to right, #fff 0%, #fff 55%, #FFF2BB 55%, #FFF2BB 100%);
 }
 #contact img {
-  width: 30em;
+  width: 20em;
   height: auto;
 }
 #contact form {
-  width: 100%;
-  height: 100%;
-  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-top: 2em;
+}
+#contact form .form-group {
+  margin: 0.5em 0;
+}
+#contact form .form-group input, #contact form .form-group textarea {
+  width: 20em;
+  background-color: #fff;
+  padding: 1em 0;
+  border: none;
+}
+#contact form .form-group input::placeholder, #contact form .form-group textarea::placeholder {
+  font-family: "Newsreader", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  color: #CABDD4;
+  padding-left: 1em;
+}
+#contact form .form-group textarea {
+  height: 180%;
+  resize: none;
+}
+#contact form .form-button {
+  margin-left: auto;
 }
 
 footer {
@@ -240,7 +268,7 @@ html, body {
 }
 
 /* CALL TO ACTION BUTTON #SHOP */
-a.callto {
+a.callto, .form-button input {
   display: block;
   width: max-content;
   text-align: center;
@@ -252,9 +280,10 @@ a.callto {
   padding: 1em;
   background-color: #290C46;
   box-shadow: 2px 2px 4px rgba(41, 12, 70, 0.3);
+  border: none;
   color: #fff;
 }
-a.callto:hover {
+a.callto:hover, .form-button input:hover {
   background-color: #CABDD4;
   color: #fff;
 }

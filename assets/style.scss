@@ -51,7 +51,7 @@ html,body{
 }
 
 /* CALL TO ACTION BUTTON #SHOP */
-a.callto{
+a.callto, .form-button input{
     display: block;
     width: max-content;
     text-align: center;
@@ -63,6 +63,7 @@ a.callto{
     padding: 1em;
     background-color: $main-cold-dark;
     box-shadow: 2px 2px 4px $main-cold-dark-transp;
+    border: none;
     color: $neutral;
     &:hover{
         background-color: $main-cold-light;
