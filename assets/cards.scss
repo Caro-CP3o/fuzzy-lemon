@@ -1,0 +1,23 @@
+#cards{
+    background-color: $main-cold-dark;
+    color: $neutral;
+    div.wrapper{
+        display: flex;
+        justify-content: space-between;
+        .card{
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap; //fonctionne pas ? doit donner une width à l'élément ?
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            padding: 0 2em;
+            img{
+                width: 5em;
+                height: auto;
+                padding-bottom: 3em;
+            }
+        }
+    }
+}

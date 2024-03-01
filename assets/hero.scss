@@ -1,0 +1,31 @@
+#hero{
+    background: linear-gradient(to right, $main-warm 0%, $main-warm 65%, $neutral 65%, $neutral 100%); 
+    grid-template-columns: repeat(5, 1fr);
+    color: $main-cold-dark;
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+        background-color: $neutral-transp;
+        grid-column: 1 / 4;
+        grid-row: 1;
+        padding: 3em;
+        z-index: 3;
+        a.callto{
+            margin-left: auto;
+        }
+    }
+    div.img{
+        height: 70vh;
+        grid-column: 2 / -1;
+        grid-row: 1;
+        z-index: 1;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center right;
+        }
+    }
+}

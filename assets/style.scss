@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*VARIABLES*/
+$main-cold: #9F89B0;
+$main-cold-light: #CABDD4;
+$main-cold-dark: #290C46;
+$main-cold-dark-transp: rgba(41, 12, 70, 0.3);
+$main-warm: #FFF2BB;
+$neutral: #fff;
+$neutral-transp: rgba(255, 255, 255, 0.8);
+
+/*STYLES*/
+@import "home.scss";
+@import "header.scss";
+@import "hero.scss";
+@import "about.scss";
+@import "galery.scss";
+@import "me.scss";
+@import "cards.scss";
+@import "contact.scss";
+@import "footer.scss";
+
+/* FONTS */
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";
+
+/*GENERAL*/
+html,body{
+    scroll-behavior: smooth;
+    font-size: 1em;
+}
+
+/* STRUCTURE OF SECTIONS */
+.slide,.mi-slide{
+    width: 100%;
+    position: relative;
+    display: grid;
+    align-items: center;
+}
+.slide{
+    min-height: 100vh;
+}
+.mi-slide{
+    min-height: 50vh;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* CALL TO ACTION BUTTON #SHOP */
+a.callto{
+    display: block;
+    width: max-content;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 1em;
+    background-color: $main-cold-dark;
+    box-shadow: 2px 2px 4px $main-cold-dark-transp;
+    color: $neutral;
+    &:hover{
+        background-color: $main-cold-light;
+        color: $neutral;
+    }
+}
+
+/* TEXT WITHIN ASIDE TAGS / H2 IN #CARDS SLIDE */
+.text-box, .card, footer{
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-kerning: normal;
+    h1, h2{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        padding-bottom: 1em;
+        font-size: 1.5em;
+    }
+    h2{
+        font-weight: 300;
+        font-size: 1em;
+        padding: 0;
+    }
+    p{
+        font-family: "Newsreader", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.2em;
+    }
+    p.copy{
+        font-size: 0.7em;
+    }
+}
+
+/* FLEX-BOX IMAGE GALLERY */ 
+.content-flex{
+    display: flex;
+    max-height: 100%;
+}

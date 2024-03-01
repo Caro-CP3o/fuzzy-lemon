@@ -1,0 +1,42 @@
+#menu-top{
+    width: 100%;
+    background-color: $neutral-transp;
+    position: sticky;
+    padding: 0.5em 0;
+    top: 0;
+    z-index: 300;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width: auto;
+        max-height: 3em;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        li{
+            flex: 1;
+            a{
+                width: 100%;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: "Ubuntu", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                padding: 1em;
+                color: $main-cold-dark;
+                &:hover{
+                    background-color: $main-cold-light;
+                    color: $neutral;
+                }
+            }
+        }
+    }
+}

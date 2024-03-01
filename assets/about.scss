@@ -1,0 +1,31 @@
+#about{
+    background: linear-gradient(to right, $neutral 0%, $neutral 35%, $main-cold 35%, $main-cold 100%); 
+    grid-template-columns: repeat(5, 1fr);
+    color: $neutral;
+    aside{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+        grid-column: 3 / -1;
+        grid-row: 1;
+        padding: 9em 3em 3em 0;
+        a.callto{
+            margin-left: auto;
+        }
+    }
+    div.img{
+        width: 65%;
+        height: 60vh;
+        grid-column: 1 / 3;
+        grid-row: 1;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            box-shadow: -2rem 2rem $main-cold-light;
+        }
+    }
+}
